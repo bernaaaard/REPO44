@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <h2 style="text-align: left">FORMULIR PPDB SMAN 8 SURAKARTA JALUR ZONASI TAHUN 2020 </h2>
+    
+    <!--Table style-->
+    <style>
+        table, tr, th, td {
+            
+          border: 1px solid black;
+          border-collapse: collapse;}
+          
+        </style>
+
+</head>
+</body>
+
+    <form action="proses.php" method="post" name="fcontoh">
+        <!--form field disini-->
+       
+<table style="margin-right: auto;
+margin-right: auto;
+padding-bottom: 30px;">
+
+    <tr>
+        <td><b>Nomor</b></td>
+        <td colspan="3" ><b>INFO PENDAFTARAN</b></td></tr>
+
+    <tr>
+        <td align="center">1</td>
+        <td>NISN</td>
+        <td colspan="3"><input id="fnisn" name="fnisn" maxlength="10" pattern="[0-9]{10}" class="form-control" placeholder="00927518" type= "number" required="">
+        </td>
+     </tr>
+
+     <tr>
+        <td align="center">2</td>
+        <td>Asal Sekolah</td>
+        <td colspan="3"></tdcolspan><input type="text" id="fasalSekolah" name="fasalSekolah" required></td>
+     </tr>
+
+     <tr>
+        <td align="center">3</td>
+        <td>Tahun Lulus</td>
+        <td colspan="3"><input type="number" maxlength="4" id="ftahunLulus" name="ftahunLulus" placeholder="----" pattern="{4}"></td>
+     </tr>
+
+     <tr><td colspan="3"><b>DATA CALON PESERTA</b></td></tr>
+
+     <tr>
+        <td align="center">4</td>
+        <td>Nama Lengkap</td>
+        <td colspan="3"><input type="text" id="fnama" name="fnama" size="30" required=""></td>
+     </tr>
+
+     <tr>
+        <td align="center">5</td>
+        <td>NIK</td>
+        <td colspan="3"><input type="text" id="fnik" name="fnik" size="30" required=""></td>
+     </tr>
+
+     <tr>
+        <td align="center">6</td>
+        <td>Tempat/Tanggal Lahir</td>
+        <td colspan="3"><input type="text" id="fttl" name="fttl" size="30" required=""></td>
+        
+    </tr>
+
+     <tr>
+        <td align="center">7</td>
+        <td>Jenis Kelamin</td>
+        <td>
+         <input type="radio" id="flakilaki" name="fjeniskelamin" value="lakilaki" checked>
+         <label for="lakilaki">Laki Laki</label></td>
+         <td>
+         <input type="radio" id="fperempuan" name="fjeniskelamin" value="perempuan">
+         <label for="perempuan">Perempuan</label></td>
+      </tr>
+
+     <tr>
+        <td align="center">8</td>
+        <td>Alamat</td>
+        <td colspan="3"><input type="text"size="30" id="falamat name="falamat" required=""></td>
+     </tr>
+
+     
+     <tr>
+         <td align="center">9</td>
+         <td>Email Aktif</td>
+       <td colspan="3"><input size="30" type="email" id="femailAktif" name="femailAktif" required=""></td>
+     </tr>
+
+</table>
+
+<table colspan="2" align="left" 
+   ><tr>
+      <td>
+         <input type="submit" name="fsubmit" value="Kirim" />
+      </td>
+   </tr>
+</form>
+</table>
+
+</body>
+</html>
